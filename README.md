@@ -1,0 +1,2 @@
+# bstore
+pos sederhana
