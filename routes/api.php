@@ -125,5 +125,8 @@ Route::prefix('customer')->group(function () {
 
         //review
         Route::post('/reviews', [App\Http\Controllers\Api\Customer\ReviewController::class, 'store'], ['as' => 'customer']);
+
+        //profile edit
+        Route::apiResource('/profile', App\Http\Controllers\Api\Customer\ProfileController::class, ['as' => 'customer']);
     });
 });
